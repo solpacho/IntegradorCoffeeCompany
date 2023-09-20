@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
+    overflow-x: hidden;
 } 
 
 header{
@@ -12,6 +13,7 @@ align-items: center;
 justify-content: space-between;
 padding: 2rem;
 background-color: #ececec;
+width: 100%;
 }
 .landing {
     width: 80%;
@@ -50,6 +52,7 @@ background-color: #ececec;
 }
 .abrir-menu-left, .abrir-menu-right, .cerrar-menu {
         display: none;
+        width: auto;
 /*         border: 0;
         font-size: 1.6rem;
         background-color: #ececec;
@@ -62,13 +65,15 @@ h1{
 .delivery{
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin: 1%;
     margin-top: 1rem;
-    margin-left: 30%;
+    margin-left: 1%;
+    width: 50%;
 }
 
 @media screen and (max-width: 550px){
     .abrir-menu-left, .abrir-menu-right {
+        width: auto;
         display: block;
         border: 0;
         font-size: 1.6rem;
@@ -145,29 +150,59 @@ h1{
     .cont{
         display: flex;
         width: 100%;
-        margin-top: 100px;
-        gap: 50px;
-        margin: 50px;
-        overflow-x: hidden;
+        margin-top: 2%;
+        gap: 2%;
+        margin: 2%;
+/*         overflow-x: hidden; */
     }
+/*     .cont{
+        display: flex;
+        margin-top: 10%;
+        gap: 5%;
+        margin: 5%;
+    } */
     .texto{
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        margin: 50px;
-        margin-top: 50px;
-        align-items: center;
+        gap: 10%;
+        margin: 10%;
+        margin-top: 10%;
     }
     .delivery{
         justify-content: center;
         align-items: center;
-        margin: 1rem;
+        margin: 1%;
         margin-top: 1rem;
-        margin-left: 30%;
+        margin-left: 1%;
+        width: 50%;
+        }
+    /* justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 30%;
+    width: 50%; */
+    .img1{
+        margin-top: 5%;
+        gap: 5%;
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .product-card {
+        border: 1px solid #ccc;
+        padding: 1%;
+        margin: 1%;
+        min-width: 5%;
+        max-width: 20%;
+        align-items: center;
     }
 }
 @media screen and (max-width: 1250px){
     .abrir-menu-left, .abrir-menu-right {
+        width: auto;
         display: block;
         border: 0;
         font-size: 1.6rem;
@@ -244,30 +279,46 @@ h1{
     .cont{
         display: flex;
         width: 100%;
-        margin-top: 100px;
-        gap: 50px;
-        margin: 50px;
-        overflow-x: hidden;
-        /* margin: auto; */
+        margin-top: 2%;
+        gap: 2%;
+        margin: 2%;
     }
     .texto{
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        margin: 50px;
-        margin-top: 50px;
-        align-items: center;
+        gap: 10%;
+        margin: 10%;
+        margin-top: 10%;
     }
     .delivery{
         justify-content: center;
         align-items: center;
-        margin: 1rem;
+        margin: 1%;
         margin-top: 1rem;
-        margin-left: 30%;
+        margin-left: 1%;
+        width: 50%;
+        }
+    .img1{
+        margin-top: 5%;
+        gap: 5%;
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .product-card {
+        border: 1px solid #ccc;
+        padding: 1%;
+        margin: 1%;
+        min-width: 5%;
+        max-width: 20%;
+        align-items: center;
     }
 }
 @media screen and (max-width: 5000px){
     .abrir-menu-left, .abrir-menu-right {
+        width: auto;
         display: block;
         border: 0;
         font-size: 1.6rem;
@@ -344,28 +395,44 @@ h1{
     .cont{
         display: flex;
         width: 100%;
-        margin-top: 100px;
-        gap: 50px;
-        margin: 50px;
-        overflow-x: hidden;
-        /* margin: auto; */
+        margin-top: 2%;
+        gap: 2%;
+        margin: 2%;
     }
     .texto{
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        margin: 50px;
-        margin-top: 50px;
-        align-items: center;
+        gap: 10%;
+        margin: 10%;
+        margin-top: 10%;
     }
     .delivery{
         justify-content: center;
         align-items: center;
-        margin: 1rem;
+        margin: 1%;
         margin-top: 1rem;
-        margin-left: 30%;
+        margin-left: 1%;
+        width: 50%;
+        }
     }
-}
+    .img1{
+        margin-top: 5%;
+        gap: 5%;
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .product-card {
+        border: 1px solid #ccc;
+        padding: 1%;
+        margin: 1%;
+        min-width: 5%;
+        max-width: 20%;
+        align-items: center;
+    }
+
 section{
     display: flex;
     flex-direction: column;
@@ -375,22 +442,22 @@ section{
 }
 .cont{
     display: flex;
-    margin-top: 100px;
-    gap: 50px;
-    margin: 50px;
-
+    width: 100%;
+    margin-top: 2%;
+    gap: 2%;
+    margin: 2%;
 }
 
+
 .img1{
-    margin-top: 50px;
-    gap: 50px;
-    width: 150px;
+    margin-top: 5%;
+    gap: 5%;
+    width: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
-
 h3{
     justify-content: center;
     align-items: center;
@@ -401,12 +468,13 @@ h3{
     display: flex;
     
 } */
+
 .texto{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin: 50px;
-    margin-top: 50px;
+    gap: 10%;
+    margin: 10%;
+    margin-top: 10%;
     align-items: center;
 }
 footer{
@@ -415,16 +483,15 @@ footer{
 
 }
 .footercontainer{
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* max-width: 1240px; */
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 5%;
 }
 .socialmedia{
     list-style: none;
     display: flex;
     float: right;
-    margin-right: 20px;
+    margin-right: 5%;
     cursor: pointer;
 }
 .fb{
@@ -458,11 +525,11 @@ footer{
 
 #categories {
     text-align: center;
-    margin: 20px;
+    margin: 1%;
 }
 
 #categories button {
-    margin: 5px;
+    margin: 1%;
 }
 #products-container {
     display: flex;
@@ -471,9 +538,11 @@ footer{
 }
 .product-card {
     border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    max-width: 300px;
+    padding: 1%;
+    margin: 1%;
+    min-width: 5%;
+    max-width: 20%;
+    align-items: center;
 }
 #cart {
     position: fixed; /* Fijar el carrito en su lugar */
@@ -501,14 +570,14 @@ footer{
 #cart-items li {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 5%;
 }
 #cart-total {
     font-weight: bold;
 }
 .cart-item-details{
     display: block;
-    margin-top: 2px;
+    margin-top: 2%;
 }
 .button-container button#btn-load {
     margin: 0 auto;
